@@ -288,7 +288,7 @@ header{
    /*  border-bottom-width: 2px; */
    /*  border-bottom-style: solid; */
    /*  border-bottom-color: var(--uerj-gold); */
-   /*  background-image: url('../images/core/fundo-escuro.svg'); */
+   /*  background-image: url('../images/fundo-escuro.svg'); */
    /*  background-repeat: no-repeat; */
    /*  background-position-x: right; */
    /*  background-color: var(--uerj-blue); */
@@ -607,7 +607,7 @@ footer .row > * {
 */
 main{
  border-radius: 5px;
- background-image: url('../images/core/fundo-cinza-horizontal.svg');
+ /* background-image: url('../images/fundo-cinza-horizontal.svg'); */
  background-repeat: no-repeat;
  background-position-x: right;
 }

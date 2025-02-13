@@ -33,7 +33,7 @@ body {
 
 header .navbar {
   color: var(--bs-white);
-  background: linear-gradient(90deg, rgb(2 0 36 / 56%) 0%, rgb(4 132 196) 52%, rgb(21 47 78 / 0%) 100%), url(img/logo_simbolo_bg.png) !important;
+  background: linear-gradient(90deg, rgb(2 0 36 / 56%) 0%, rgb(4 132 196) 52%, rgb(21 47 78 / 0%) 100%), url(../images/logo_simbolo_bg.png) !important;
   background-position: right !important;
   box-shadow: rgb(136 165 191 / 35%) 0px 6px 9px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px !important;
   min-height: 8.3rem !important;
