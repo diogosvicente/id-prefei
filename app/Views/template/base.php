@@ -8,7 +8,7 @@
 	<meta name="description" content="SIG | Sistema Integrado de Gestão - PREFEI">
 	<meta name="author" content="Prefeitura dos CAMPI (PREFEI)">
 	<meta name="Access-Control-Allow-Origin" content="*">
-	<title>ID - PREFEI</title>
+	<title>SIG - PREFEI</title>
 
 	<!-- Estilos -->
 	<link href="<?php echo base_url('public/assets/images/favicon.png'); ?>" rel="icon" type="image/png" /><!-- Bootstrap core CSS -->
@@ -25,7 +25,7 @@
 	<link href="<?php echo base_url('public/assets/css/print.css'); ?>" rel="stylesheet" type="text/css" />
 	<link href="<?php echo base_url('public/assets/css/jquery-ui.css'); ?>" rel="stylesheet" type="text/css" />
 	<!-- Data Tables -->
-	<link href="<?php echo base_url('public/assets/css/dataTables.dataTables.css'); ?>" rel="stylesheet" type="text/css" />
+	<link href="<?php echo base_url('public/assets/vendor/datatables/dataTables.dataTables.css'); ?>" rel="stylesheet" type="text/css" />
 	<!-- Tags Input -->
 	<link href="<?php echo base_url('public/assets/css/bootstrap-tagsinput.css'); ?>" rel="stylesheet" type="text/css" />    <!-- FIM - head -->
 	<!-- Estilo da página -->
@@ -49,9 +49,12 @@
 
 					<!-- Menu de itens para melhorar a acessibilidade (tamanho da fonte e contraste) -->
 					 <div id="menuAcessibilidade">
-						<span title="Restaurar fonte" data-bs-placement="bottom" data-bs-toggle="tooltip" class="font-reset">A</span><span class="visually-hidden">Restaurar fonte</span>
-						<span title="Diminuir fonte" data-bs-placement="bottom" data-bs-toggle="tooltip" class="font-minus">A-</span><span class="visually-hidden">Diminuir fonte</span>
-						<span title="Aumentar fonte" data-bs-placement="bottom" data-bs-toggle="tooltip" class="font-plus">A+</span><span class="visually-hidden">Aumentar fonte</span>
+						<span title="Restaurar fonte" data-bs-placement="bottom" data-bs-toggle="tooltip" class="font-reset">A</span>
+						<span class="visually-hidden">Restaurar fonte</span>
+						<span title="Diminuir fonte" data-bs-placement="bottom" data-bs-toggle="tooltip" class="font-minus">A-</span>
+						<span class="visually-hidden">Diminuir fonte</span>
+						<span title="Aumentar fonte" data-bs-placement="bottom" data-bs-toggle="tooltip" class="font-plus">A+</span>
+						<span class="visually-hidden">Aumentar fonte</span>
 						<span title="Alto contraste" data-bs-placement="bottom" data-bs-toggle="tooltip" class="contrast">
 							<i class="bi-circle-half"></i><span class="visually-hidden">Alto contraste</span>
 						</span>
@@ -136,7 +139,7 @@
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-8 col-xs-12">
-					ID PREFEI - <small><span class="idTela">v1</span></small>
+					SIG - PREFEI - <small><span class="idTela">v1</span></small>
 					<br>
 					<small>Página renderizada em <strong><?php echo $load_time; ?></strong> segundos.</small>
 				</div>
@@ -157,14 +160,29 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo base_url('public/assets/js/html5shiv.min.js'); ?>" type="text/javascript"></script><script src="https://sig.uerj.br/assets/vendor/respond.js/dest/respond.min.js" type="text/javascript"></script><![endif]-->
 
-	<script src="<?php echo base_url('public/assets/js/bootstrap.bundle.min.js'); ?>" type="text/javascript"></script><script src="https://sig.uerj.br/assets/vendor/jquery/dist/jquery.js" type="text/javascript"></script><script src="https://sig.uerj.br/assets/vendor/datatables.net/js/dataTables.min.js" type="text/javascript"></script><script src="https://sig.uerj.br/assets/vendor/cleave.js/dist/cleave.min.js" type="text/javascript"></script><script src="https://sig.uerj.br/assets/vendor/jquery-ui/dist/jquery-ui.js" type="text/javascript"></script><script src="https://sig.uerj.br/assets/vendor/tinymce/tinymce.min.js" type="text/javascript"></script><script src="https://sig.uerj.br/assets/vendor/tinymce/themes/silver/theme.min.js" type="text/javascript"></script><script src="https://sig.uerj.br/assets/config/tinymce/langs/pt_BR.js" type="text/javascript"></script>
-	<script src="<?php echo base_url('public/assets/js/bootstrap-tagsinput.js'); ?>" type="text/javascript"></script><script src="https://sig.uerj.br/assets/js/libs/jquery-mask/jquery.maskedinput.js" type="text/javascript"></script>
-	<script src="<?php echo base_url('public/assets/js/base.mask.js'); ?>" type="text/javascript"></script><script src="https://sig.uerj.br/assets/js/core/phpjs.js" type="text/javascript"></script><script src="https://sig.uerj.br/assets/js/core/accessibility.js" type="text/javascript"></script><script src="https://sig.uerj.br/assets/js/core/functions.js" type="text/javascript"></script><script src="https://sig.uerj.br/assets/js/core/functions_layout.js" type="text/javascript"></script>
-	<script src="<?php echo base_url('public/assets/js/layout.js'); ?>" type="text/javascript"></script><!-- FIM - Javascripts comuns a todas as páginas -->
+	<script src="<?php echo base_url('public/assets/js/bootstrap.bundle.min.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/jquery.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/vendor/datatables/dataTables.min.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/cleave.min.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/jquery-ui.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/tinymce.min.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/theme.min.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/pt_BR.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/bootstrap-tagsinput.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/jquery.maskedinput.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/base.mask.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/phpjs.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/accessibility.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/functions.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/functions_layout.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/layout.js'); ?>" type="text/javascript"></script>
 	<!-- FIM - Javascripts comuns a todas as páginas -->
 
 	<!-- Javascript da página -->
-
+	<?php if (uri_string() === 'login') : ?>
+		<script src="<?php echo base_url('public/assets/js/login-page/login.js'); ?>" type="text/javascript"></script>
+	<?php endif; ?>
 	<!-- FIM - Javascript da página -->
+		
 	</body>
 </html>

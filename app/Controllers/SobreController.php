@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\UsuarioModel;
 
 class SobreController extends BaseController
 {

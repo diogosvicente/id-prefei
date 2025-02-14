@@ -19,18 +19,18 @@
                                 Permite o gerenciamento e controle das permissões de acesso aos sistemas da Prefeitura dos Campi. </td>
                         </tr>
                         <tr>
-							<td class="rotulo">Desenvolvedor </td>
-							<td class="conteudo">Diogo Nascimento - <a href="https://www.prefeitura.uerj.br/" onclick="window.open('https://www.prefeitura.uerj.br/', '_blank'); return false;">Prefeitura dos Campi</a>/<a href="https://www.prefeitura.uerj.br/prefeitura/daeng/" onclick="window.open('https://www.prefeitura.uerj.br/prefeitura/daeng/', '_blank'); return false;">DAENG</a>
+							<td class="rotulo">Desenvolvedores </td>
+							<td class="conteudo"><a href="https://www.github.com/diogosvicente" target="_blank" rel="noopener noreferrer">Diogo Nascimento</a> / <a href="https://www.github.com/LocDog1978" target="_blank" rel="noopener noreferrer">Leandro Carlos</a>
 							</td>
 						</tr>
                         <tr>
 							<td class="rotulo">Site</td>
-							<td class="conteudo"><a href="https://github.com/diogosvicente" onclick="window.open('https://github.com/diogosvicente', '_blank'); return false;">https://github.com/diogosvicente</a>
+							<td class="conteudo"><a href="https://www.prefeitura.uerj.br/" target="_blank" rel="noopener noreferrer">Prefeitura dos Campi</a>
 							</td>
 						</tr>
                         <tr>
 							<td class="rotulo">Template</td>
-							<td class="conteudo"><a href="https://www.dinfo.uerj.br" onclick="window.open('https://www.dgti.uerj.br', '_blank'); return false;">DGTI</a> - Diretoria Geral de Tecnologia da Informação
+							<td class="conteudo"><a href="https://www.dinfo.uerj.br" target="_blank" rel="noopener noreferrer">DGTI</a> - Diretoria Geral de Tecnologia da Informação
 							</td>
 						</tr>
                         <tr>
