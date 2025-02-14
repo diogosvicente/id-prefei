@@ -5,5 +5,4 @@
 	<h3 class="page-title">Olá Mundo</h3>
 </section>
 
-
 <?php $this->endSection(); ?>
