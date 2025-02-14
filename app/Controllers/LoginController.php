@@ -19,7 +19,17 @@ class LoginController extends BaseController
          *
          * @return \CodeIgniter\View\View
          */
-        return view('base/login');
+        return view('login/login');
+    }
+
+    public function forgot_password()
+    {
+        return view('login/forgot_password');
+    }
+
+    public function first_access()
+    {
+        return view('login/first_access');
     }
 
 }

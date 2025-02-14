@@ -180,7 +180,15 @@
 
 	<!-- Javascript da página -->
 	<?php if (uri_string() === 'login') : ?>
-		<script src="<?php echo base_url('public/assets/js/login-page/login.js'); ?>" type="text/javascript"></script>
+		<script src="<?php echo base_url('public/assets/js/login/login.js'); ?>" type="text/javascript"></script>
+	<?php endif; ?>
+
+	<?php if (uri_string() === 'forgot_password') : ?>
+		<script src="<?php echo base_url('public/assets/js/login/forgot_password.js'); ?>" type="text/javascript"></script>
+	<?php endif; ?>
+
+	<?php if (uri_string() === 'first_access') : ?>
+		<script src="<?php echo base_url('public/assets/js/login/first_access.js'); ?>" type="text/javascript"></script>
 	<?php endif; ?>
 	<!-- FIM - Javascript da página -->
 		
