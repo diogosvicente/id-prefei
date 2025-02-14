@@ -14,11 +14,11 @@
                         <a href="#" class="bi-info-circle-fill"
                             data-bs-trigger="click"
                             data-bs-toggle="popover"
-                            data-bs-content="Utilize seu CPF como identificador UERJ (ID Único) para redefinir sua senha">
+                            data-bs-content="Utilize seu CPF como identificador UERJ (E-PREFEITURA) para redefinir sua senha">
                         </a>
                         <span class="requerido">*</span>
                     </label>
-                    <input type="text" name="identificador" value="" id="identificador" label="Login" class="form-control mask-cpf" placeholder="Digite seu ID Único" autocomplete="off" data-required="*" />
+                    <input type="text" name="identificador" value="" id="identificador" label="Login" class="form-control mask-cpf" placeholder="Digite seu ID E-Prefeitura" autocomplete="off" data-required="*" />
                     <div id="divError-identificador" class="invalid-feedback"></div>
                     <div id="divNotice-identificador" class="notice-feedback"></div>
                 </div>

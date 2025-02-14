@@ -32,4 +32,9 @@ class LoginController extends BaseController
         return view('login/first_access');
     }
 
+    public function logout()
+    {
+        session()->destroy();
+		return redirect()->to(base_url());
+    }
 }

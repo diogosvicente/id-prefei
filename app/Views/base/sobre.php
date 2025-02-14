@@ -4,14 +4,14 @@
 <section id="sobre">
     <h3 class="page-title">Sobre o Sistema</h3>
     <fieldset>
-        <legend>Dados do SIG - PREFEI</legend>
+        <legend>Dados do E-PREFEITURA</legend>
         <div class="row">
             <div class="col-12">
                 <table id="sobreTable" class="cell-border" style="width:100%">
                     <tbody>
                         <tr>
                             <td class="rotulo">Nome</td>
-                            <td class="conteudo">SIG - PREFEI - Sistema Integrado de Gestão da Prefeitura dos Campi </td>
+                            <td class="conteudo">E-PREFEITURA - Centro de Gestão e Acesso Digital da Prefeitura dos Campi </td>
                         </tr>
                         <tr>
                             <td class="rotulo">Descrição</td>

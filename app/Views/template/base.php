@@ -5,10 +5,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="SIG | Sistema Integrado de Gestão - PREFEI">
+	<meta name="description" content="E-PREFEITURA">
 	<meta name="author" content="Prefeitura dos CAMPI (PREFEI)">
 	<meta name="Access-Control-Allow-Origin" content="*">
-	<title>SIG - PREFEI</title>
+	<title>E-PREFEITURA</title>
 
 	<!-- Estilos -->
 	<link href="<?php echo base_url('public/assets/images/favicon.png'); ?>" rel="icon" type="image/png" /><!-- Bootstrap core CSS -->
@@ -42,8 +42,8 @@
 							<img src="<?php echo base_url('public/assets/images/logo_uerj_branca.png'); ?>" alt="">
 						</span>
 						<div class="titulo">
-							<p class="sigla">SIG - PREFEI</p>
-							<p class="nome">Sistema Integrado de Gestão</p>
+							<p class="sigla">E-PREFEITURA</p>
+							<p class="nome">Prefeitura Digital</p>
 						</div>
 					</a>
 
@@ -139,7 +139,7 @@
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-8 col-xs-12">
-					SIG - PREFEI - <small><span class="idTela">v1</span></small>
+					E-PREFEITURA - <small><span class="idTela">v1</span></small>
 					<br>
 					<small>Página renderizada em <strong><?php echo $load_time; ?></strong> segundos.</small>
 				</div>
@@ -158,7 +158,8 @@
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
-	<script src="<?php echo base_url('public/assets/js/html5shiv.min.js'); ?>" type="text/javascript"></script><script src="https://sig.uerj.br/assets/vendor/respond.js/dest/respond.min.js" type="text/javascript"></script><![endif]-->
+	<script src="<?php echo base_url('public/assets/js/html5shiv.min.js'); ?>" type="text/javascript"></script>
+	<script src="<?php echo base_url('public/assets/js/respond.min.js'); ?>" type="text/javascript"></script><![endif]-->
 
 	<script src="<?php echo base_url('public/assets/js/bootstrap.bundle.min.js'); ?>" type="text/javascript"></script>
 	<script src="<?php echo base_url('public/assets/js/jquery.js'); ?>" type="text/javascript"></script>
@@ -179,18 +180,20 @@
 	<!-- FIM - Javascripts comuns a todas as páginas -->
 
 	<!-- Javascript da página -->
-	<?php if (uri_string() === 'login') : ?>
-		<script src="<?php echo base_url('public/assets/js/login/login.js'); ?>" type="text/javascript"></script>
-	<?php endif; ?>
+	<?php 
+		$scripts = [
+			'login' => 'public/assets/js/login/login.js',
+			'forgot_password' => 'public/assets/js/login/forgot_password.js',
+			'first_access' => 'public/assets/js/login/first_access.js'
+		];
 
-	<?php if (uri_string() === 'forgot_password') : ?>
-		<script src="<?php echo base_url('public/assets/js/login/forgot_password.js'); ?>" type="text/javascript"></script>
-	<?php endif; ?>
+		$uri = uri_string();
 
-	<?php if (uri_string() === 'first_access') : ?>
-		<script src="<?php echo base_url('public/assets/js/login/first_access.js'); ?>" type="text/javascript"></script>
+		if (isset($scripts[$uri])) :
+	?>
+		<script src="<?php echo base_url($scripts[$uri]); ?>" type="text/javascript"></script>
 	<?php endif; ?>
 	<!-- FIM - Javascript da página -->
-		
+
 	</body>
 </html>

@@ -14,8 +14,8 @@
             <legend>Dados para primeiro acesso</legend>
             <div class="row">
                 <div class="col-sm">
-                    <label for="identificador" class="form-label">ID PREFEI <span class="requerido">*</span></label>
-                    <input type="text" name="identificador" value="" id="identificador" label="ID PREFEI" class="form-control mask-cpf" placeholder="Utilize seu CPF como identificador UERJ (ID PREFEI)" autocomplete="off" data-required="*" maxlength="14" />
+                    <label for="identificador" class="form-label">E-Prefeitura <span class="requerido">*</span></label>
+                    <input type="text" name="identificador" value="" id="identificador" label="E-Prefeitura" class="form-control mask-cpf" placeholder="Utilize seu CPF como identificador UERJ (E-Prefeitura)" autocomplete="off" data-required="*" maxlength="14" />
                     <div id="divError-identificador" class="invalid-feedback"></div>
                     <div id="divNotice-identificador" class="notice-feedback"></div>
                 </div>

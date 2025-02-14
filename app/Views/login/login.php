@@ -36,9 +36,9 @@
                     <label for="login" class="form-label">Login <a href="#" class="bi-info-circle-fill"
                         data-bs-trigger="click"
                         data-bs-toggle="popover"
-                        data-bs-content="Utilize as credenciais do ID PREFEI para realizar o login"></a>
+                        data-bs-content="Utilize as credenciais do ID E-Prefeitura para realizar o login"></a>
                     </label>
-                    <input type="text" name="login" value="" id="login" label="Login" class="form-control mask-cpf" placeholder="Digite seu ID PREFEI" autocomplete="off" />
+                    <input type="text" name="login" value="" id="login" label="Login" class="form-control mask-cpf" placeholder="Digite seu ID E-Prefeitura" autocomplete="off" />
                     <div id="divError-login" class="invalid-feedback"></div>
                     <div id="divNotice-login" class="notice-feedback"></div>
                 </div>
