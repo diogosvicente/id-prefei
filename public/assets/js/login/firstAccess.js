@@ -70,6 +70,8 @@ function firstAccessPasso1() {
     //Dados válidos
     var params = $("#formFirstAccess").serialize();
 
+    console.log("seus parametros são esses: ", params);
+
     $.ajax({
         type: 'post',
         url: $("[name=baseUrl]").val() + '/first_access_validate',

@@ -27,11 +27,6 @@ class LoginController extends BaseController
         return view('login/forgot_password');
     }
 
-    public function first_access()
-    {
-        return view('login/first_access');
-    }
-
     public function logout()
     {
         session()->destroy();

@@ -183,8 +183,8 @@
 	<?php 
 		$scripts = [
 			'login' => 'public/assets/js/login/login.js',
-			'forgot_password' => 'public/assets/js/login/forgot_password.js',
-			'first_access' => 'public/assets/js/login/first_access.js'
+			'forgot_password' => 'public/assets/js/login/forgotPassword.js',
+			'first_access' => 'public/assets/js/login/firstAccess.js'
 		];
 
 		$uri = uri_string();
